@@ -1,0 +1,403 @@
+::-webkit-scrollbar{
+  display: none;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 9%;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+}
+
+body{
+  background: url(89781.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.navlist{
+  display: flex;
+  
+}
+
+.navlist a{
+  color: white;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+}
+
+.navlist a:hover{
+  border-bottom: 2px solid white;
+  transform: translateY(-5px);
+}
+
+li:hover {
+  transform: translateY(-3px);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.navlist button{
+  margin-left: 20px;
+  height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 6em;
+  border-radius: 20px;
+  border: 1px solid white;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: translateY(-3px);
+  border-radius: 10px;
+  transition: 0.3s
+}
+
+.cartimg{
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.cartimg:hover{
+  transform: translateY(-3px);
+  transition: 0.3s
+}
+
+#menu-icon{
+  color: white;
+  font-size: 30px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.bars{
+  width: 20px;
+  height: 20px;
+}
+
+.hero{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  align-items: center;
+  gap: 5rem;
+  text-align: center;
+}
+
+.vapexpic{
+  width: 400px;
+  height: auto;
+  border-radius: 200px;
+}
+
+section{
+  padding: 0 15%;
+}
+
+.hero-text h1{
+  font-size: 90px;
+  font-weight: 500;
+  color: white;
+}
+
+.hero-text p{
+  font-size: larger;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+}
+
+.containerfooter{
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section{
+  margin-top: 40px;
+  background: url(home.jpg) no-repeat left;
+  background-size: 40%;
+  margin-left: 50px;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 100px 0;
+}
+
+.inner-container{
+  width: 55%;
+  float: right;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+  border: 1px solid white;
+  padding: 50px;
+  margin-right: 20px;
+}
+
+.inner-container h1{
+  margin-bottom: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text{
+  font-size: 20px;
+  color: white;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 1px;
+}
+
+.contact-section{
+  background: transparent;
+  padding: 40px 0;
+  margin-top: 65px;
+}
+
+.contact-section h1{
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+
+}
+
+.border{
+  width: 100px;
+  height: 10px;
+  background: white;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+  padding: 20px 40px;
+  outline: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.contact-form-text:hover{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+  resize: none;
+}
+
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
+
+@media (max-width: 1150px){
+    
+  header{
+    padding: 15px 3%;
+    transition: .2s;
+  }
+
+}
+
+@media (max-width: 1250px){
+
+  section{
+    padding: 0 12%;
+    transition: 0.2s;
+  }
+
+}
+
+@media (max-width: 1150px){
+
+
+      .hero-text h1{
+        font-size: 60px;
+        margin: 0 0 30px;
+      }
+
+      .hero-text p{
+        margin-bottom: 25px;
+      }
+
+}
+
+@media (max-width: 1000px){
+      section{
+        padding: 0 3%;
+        transition: .2s;
+      }
+
+      .inner-container{
+        padding: 80;
+      }
+
+      .hero-text{
+        padding-top: 115px;
+      }
+
+      .hero-img{
+        text-align: center;
+      }
+
+      .vapexpic{
+        display: none;
+      }
+
+      .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+      }
+}
+
+@media (max-width: 860px){
+  #menu-icon{
+    display: block;
+  }
+  .navlist{
+    position: absolute;
+    top: 100%;
+    right: -300;
+    width: 300px;
+    height: 200px;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all .55s ease;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+  }
+
+  .navlist a{
+    display: block;
+    margin: 7px 0;
+    margin-left: 0;
+
+}
+.navlist button{
+  display: block;
+  margin: 10px 0;
+  margin-left: 0;
+}
+.cartimg{
+  margin: 10px 0;
+}
+
+.navlist.open{
+  right: 0;
+  border: 2px solid white;
+}
+
+.about-section{
+  background-size: 100%;
+  padding: 100px 40px;
+  transition: all .55s ease;
+  margin-left: 0;
+}
+
+.inner-container{
+  width: 100%;
+  color: white;
+  transition: all .55s ease;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+  margin-right: 0;
+}
+
+.text{
+  color: white;
+}
+
+}
+
+@media(max-width: 680px){
+
+
+}

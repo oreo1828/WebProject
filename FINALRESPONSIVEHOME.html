@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua. Simple Portfolio</title>
+  <link rel="stylesheet" href="finalhomecss.css">
+  <link rel="icon" href="ZEKE.jpg" type="image/x-icon">
+  <script>
+
+  </script>
+</head>
+<body>
+
+  <header id="Top">
+    <a href="" class="logo">Joshua.</a>
+    <ul class="navlist">
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+
+    <div class="bx bx-menu" id="menu-icon">
+      <img class="bars" src="barsss.png" alt="bar">
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+
+      <h1>HI I'M JOSHUA!</h1>
+  
+        <p>"I'm a guy who loves to play video games 
+          also a little bit of coding"</p>
+ 
+    </div>
+
+  </section>
+
+  <div class="about-section" id="about">
+    <div class="inner-container">
+      <h1 class="text">About Joshua</h1>
+      <p class="text">
+        I'm a computer science student that is reliable at anything also i love to watching anime.
+      </p>
+
+      <h1>Reach Me</h1>
+
+      <p class="text">
+        📍Address:Wenceslao Caba La Union
+      </p>
+      <p class="text">
+        📞:09667923057  
+      </p>
+    </div>
+
+  </div>
+
+  <div class="contact-section" id="contact">
+
+    <h1>Contact Me</h1>
+    <form class="contact-form" action="" method="post">
+      <input type="text" class="contact-form-text" placeholder="Your Name">
+      <input type="text" class="contact-form-text" placeholder="Your Email">
+      <input type="text" class="contact-form-text" placeholder="Your Phone No.">
+      <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+
+      <input type="submit" class="contact-form-btn" value="Send">
+    </form>
+  </div>
+  
+  <script>
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
+
+   menu.onclick = () => {
+   menu.classList.toggle('bx-x');
+   navlist.classList.toggle('open');
+};
+  </script>
+</body>
+</html>
